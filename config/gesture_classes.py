@@ -10,7 +10,7 @@ Cách sử dụng:
 
 GESTURE_CLASSES = {
     '0': 'fist',           # Nắm đấm
-    '1': 'one',            # Một ngón
+    '1': 'point',          # Một ngón
     '2': 'two',            # Hai ngón (peace/victory)
     '3': 'palm',           # Bàn tay
 }

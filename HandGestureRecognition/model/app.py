@@ -1,1 +1,0 @@
-   pip install tensorflow pandas numpy matplotlib
