@@ -41,7 +41,7 @@ HandGestureRecognition/
 ├── 📱 app.py                   # Data collection app
 ├── 🎯 recog_app.py            # Recognition app
 ├── 📋 requirements.txt         # Dependencies
-└── 📚 README.md               # This file
+└── 📚 README.md               
 ```
 
 ## How this project works
