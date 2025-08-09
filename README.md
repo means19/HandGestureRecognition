@@ -1,6 +1,6 @@
 # Hand Gesture Recognition with Neural Networks
 
-A real-time hand gesture recognition system using MediaPipe hand landmarks and TensorFlow neural networks. This project implements a complete pipeline from data collection to model deployment with a clean, modular architecture.
+A real-time hand gesture recognition system using MediaPipe hand landmarks and TensorFlow neural networks. 
 
 ## Project Overview
 
@@ -16,36 +16,6 @@ This project can recognize hand gestures in real-time using computer vision and 
 
 <img width="1200" height="1021" alt="demo_final" src="https://github.com/user-attachments/assets/558c5dce-1f7f-44ed-927d-ce67a7963a9d" />
 
-
-## Project Structure
-
-```
-HandGestureRecognition/
-├── 📁 config/
-│   └── settings.py              # Configuration settings
-├── 📁 core/
-│   ├── model_manager.py         # Model loading and inference
-│   ├── preprocessor.py          # Data preprocessing
-│   └── predictor.py            # Gesture prediction with smoothing
-├── 📁 utils/
-│   ├── landmark_extractor.py   # Hand landmark extraction
-│   ├── statistics.py           # Performance tracking
-│   └── visualization.py        # UI visualization
-├── 📁 dataset/
-│   └── hand_gestures_dataset.csv # Training dataset
-├── 📁 model/neural_network/
-│   ├── checkpoints/            # Best model checkpoints
-│   ├── hand_gesture_model.h5   # Keras model
-│   ├── hand_gesture_model.tflite # TensorFlow Lite model
-│   ├── scaler.pkl              # Feature scaler
-│   └── label_encoder.pkl       # Label encoder
-├── 📁 logs/                    # Session statistics
-├── 📊 neural_network_training.ipynb # Training notebook
-├── 📱 app.py                   # Data collection app
-├── 🎯 recog_app.py            # Recognition app
-├── 📋 requirements.txt         # Dependencies
-└── 📚 README.md               
-```
 
 ## How this project works
 
@@ -190,21 +160,6 @@ MIN_TRACKING_CONFIDENCE = 0.5
 3. **Update Classes**: Model automatically detects new classes
 4. **Test**: Use recognition app to validate
 
-### Code Structure
-
-- **Modular Design**: Each component has single responsibility
-- **Error Handling**: Comprehensive exception handling
-- **Type Safety**: Clear function signatures and documentation
-- **Performance**: Optimized for real-time inference
-
-### Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
 ## Troubleshooting
 
 ### Debug Mode
@@ -212,7 +167,7 @@ MIN_TRACKING_CONFIDENCE = 0.5
 Enable debug mode for detailed information:
 
 ```bash
-python recog_app_clean.py
+python recog_app.py
 # Then press 'd' to toggle debug mode
 ```
 
@@ -228,7 +183,6 @@ Debug output includes:
 - [TensorFlow Documentation](https://www.tensorflow.org/)
 - [OpenCV Python Tutorials](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
 
-## License
 
 
 
