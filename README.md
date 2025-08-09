@@ -14,6 +14,9 @@ This project can recognize hand gestures in real-time using computer vision and 
 - **Model Training**: Complete Jupyter notebook for neural network training
 - **Debug Mode**: Detailed logging and visualization
 
+<img width="1200" height="1021" alt="demo_final" src="https://github.com/user-attachments/assets/558c5dce-1f7f-44ed-927d-ce67a7963a9d" />
+
+
 ## Project Structure
 
 ```
