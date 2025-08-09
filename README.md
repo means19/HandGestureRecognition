@@ -204,43 +204,6 @@ MIN_TRACKING_CONFIDENCE = 0.5
 
 ## Troubleshooting
 
-### Common Issues
-
-**1. Model Not Found**
-```bash
-❌ Missing required files: model/neural_network/...
-```
-**Solution**: Run `neural_network_training.ipynb` first
-
-**2. Camera Not Working**
-```bash
-❌ Cannot open camera
-```
-**Solution**: 
-- Check camera permissions
-- Try different camera index in `Config.CAMERA_INDEX`
-- Ensure no other apps are using camera
-
-**3. Low Accuracy**
-```bash
-Predictions are inconsistent
-```
-**Solution**:
-- Collect more training data (100+ samples per gesture)
-- Ensure consistent lighting conditions
-- Check hand is clearly visible
-- Adjust confidence threshold
-
-**4. Slow Performance**
-```bash
-Low FPS or laggy recognition
-```
-**Solution**:
-- Use TensorFlow Lite model
-- Reduce camera resolution
-- Close other applications
-- Consider GPU acceleration
-
 ### Debug Mode
 
 Enable debug mode for detailed information:
@@ -255,37 +218,6 @@ Debug output includes:
 - Normalized feature ranges
 - Prediction probabilities
 - Processing timing
-
-## Advanced Usage
-
-### Custom Training
-
-```python
-# Custom model architecture
-model = tf.keras.Sequential([
-    tf.keras.layers.Input((42,)),
-    tf.keras.layers.Dense(64, activation='relu'),
-    tf.keras.layers.Dropout(0.3),
-    tf.keras.layers.Dense(32, activation='relu'),
-    tf.keras.layers.Dense(num_classes, activation='softmax')
-])
-```
-
-### Batch Processing
-
-```python
-from core.model_manager import ModelManager
-from core.preprocessor import Preprocessor
-
-# Load models
-model_manager = ModelManager(use_tflite=True)
-preprocessor = Preprocessor()
-
-# Process multiple samples
-for landmarks in landmark_batch:
-    normalized = preprocessor.normalize_landmarks(landmarks)
-    prediction = model_manager.predict(normalized)
-```
 
 ## References
 
